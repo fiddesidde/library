@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #dee2ff;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 50px;
+    background-color: #8e9aaf;
+}
+
+button {
+    background-color: lightgreen;
+    border: 1px solid black;
+    font-weight: bolder;
+    border-radius: 3px;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.card {
+    margin: 10px;
+    min-width: 500px;
+    background-color: #cbc0d3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#input-form-card {
+    align-content: stretch;
+    margin: 10px 10px 10px 10px;
+}
+
+#open-form-btn {
+    margin: 10px 10px 10px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#save-btn {
+    width: 50px;
+    margin: 5px 10px 10px 10px;
+}
+
+#form-div {
+    margin: 0;
+    margin-top: 0px;
+    display: none;
+}
+
+.title {
+    margin: 10px 10px 0px 10px;
+    background-color: #feeafa;
+    padding: 3px 3px 0px 3px;
+    border-right: 1px solid #8e9aaf;
+}
+
+.author {
+    margin: 0px 10px 5px 10px;
+    padding: 0px 3px 3px 3px;
+    margin-bottom: 5px;
+    font-style: italic;
+    background-color: #feeafa;
+    border-bottom: 1px solid #8e9aaf;
+    border-right: 1px solid #8e9aaf;
+}
+
+.pages {
+    margin: 0px 10px 0px 10px;
+    padding: 3px 3px 0px 3px;
+    border-right: 1px solid #8e9aaf;
+    background-color: #feeafa;
+}
+
+.read {
+    padding: 0px 3px 3px 3px;
+    margin: 0px 10px 0px 10px;
+    background-color: #feeafa;
+    border-bottom: 1px solid #8e9aaf;
+    border-right: 1px solid #8e9aaf;
+}
+
+.delBtn {
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(250, 94, 94);
+}
+
+.labels {
+    background-color: #feeafa;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
+    border-right: 1px solid #8e9aaf;
+}
+
+#form-read {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 0px 5px 0px 5px;
+    margin: 0px 10px 0px 10px;
+    background-color: #feeafa;
+    border: none;
+    border-right: 1px solid #8e9aaf;
+}
+
+.input:focus {
+    outline: none;
+}
+
+#check-div {
+    background-color: #feeafa;
+    border-bottom: 1px solid #8e9aaf;
+}
+
+@media (max-width: 700px) {
+    .card {
+        min-width: 300px;
+    }
+}
