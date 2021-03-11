@@ -25,20 +25,22 @@ function Book(title, author, pages, read = false, id) {
     this.pages = pages;
     this.read = read;
     this.id = id || Math.round(Math.random() * 10000);
-
-    this.getReadStatus = function () {
-        if (this.read) return 'read';
-        else return 'not read yet';
-    };
-
-    this.toggleReadStatus = function () {
-        this.read = !this.read;
-    };
-
-    this.info = function () {
-        return `${title}, ${author}, ${pages}, ${getReadStatus()}`;
-    };
 }
+
+Book.prototype.getReadStatus = function () {
+    if (this.read) return 'read';
+    else return 'not read yet';
+};
+
+Book.prototype.toggleReadStatus = function () {
+    this.read = !this.read;
+};
+
+Book.prototype.info = function () {
+    return `${this.title}, ${this.author}, ${
+        this.pages
+    }, ${this.getReadStatus()}`;
+};
 
 const createCardFromBook = book => {
     const { title, author, pages, read, id } = book;
